@@ -1,0 +1,55 @@
+#header img{
+    width:280px;
+}
+
+#main .carousel-inner img{
+    height:337px;
+    width:187px;
+}
+
+#work-experience img{
+    max-height: 35vh;;
+}
+
+#personal-proyects img{
+    max-height: 35vh;;
+}
+
+#studies img{
+    max-height: 35vh;;
+}
+
+#footer{
+    background: -webkit-linear-gradient(0deg, #1c3643 0, #273b47 25%, #1e5372)
+}
+
+#footer img{
+    width:50px;
+    height:50px;
+}
+#footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#footer a:hover{
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.text-work{
+    color: #97c93e !important;
+}
+
+#about-me{
+    background-color: #343a40;
+    color: white;
+}
+
+#about-me img{
+    width:180px;
+    height:240px;
+    max-width: 100%;
+}

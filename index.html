@@ -1,181 +1,477 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF8">
-  <title>Hola soy David Cardona</title>
-  <link rel="icon" type="image/png" href="images/faviconDavid.PNG" />
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&family=Source+Sans+Pro&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/estilos.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <link href="index.css" rel="stylesheet">
+
+  <title>Portafolio David Cardona</title>
 </head>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <figure class="logo">
-        <img src="images/LogoDavidCardona.PNG" alt="Logo de https://dcardonac31.github.io" width="320" height="116" />
-      </figure>
-      <nav class="menu">
-        <ol>
-          <li>
-            <a class="link" href="#experienciaLaboral">Experiencia Laboral</a>
+<body data-spy="scroll" data-target="#navbar">
+  <!-- Header -->
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/LogoDavidCardona.png" alt="LogoDavidCardona">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">Acerca de mi</a>
           </li>
-          <li>
-            <a class="link" href="#proyectosPersonales">Proyectos Personales</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#work-experience">Experiencia Laboral</a>
           </li>
-          <li>
-            <a class="link" href="#conocimiento-titulo">Conocimientos</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#personal-proyects">Proyectos Personales</a>
           </li>
-          <li>
-            <a class="link" href="#contacto">Trabajemos juntos</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#studies">Estudios</a>
           </li>
-        </ol>
-      </nav>
+          <li class="nav-item">
+            <a class="nav-link text-work" href="#footer">Trabajemos Juntos</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
-  <section class="hero">
-    <div class="container">
-      <h1>
-        Hola! Soy <strong>David Cardona Cardenas</strong>. <br>
-        Estudiante de <strong>ingenieria de sistemas</strong>, <br>
-        <strong>autodidacta</strong>, apasionado por el <br>
-        <strong>desarrollo de software</strong> y todo lo <br>
-        que tenga que ver con <strong>tecnolog&iacute;a</strong>.
-      </h1>
-      <img class="hero-image" src="images/david.jpg" width="230" height="300"/> 
+  </nav>
+  <!-- /Header -->
+
+  <!-- about-me -->
+  <section id="about-me">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-md-auto">
+          <img src="images/david.jpg" alt="DavidCardona">
+        </div>
+        <div class="col pt-2">
+          <h2 class="mt-2">Acerca de mi</h2>
+          <p>Hola, Soy <strong>David Sneider Cardona Cardenas</strong> , Ingeniero de sistemas en formación y autodidacta en temas de desarrollo de software, me apasiona conocer y trabajar con tecnologías frontend y backend como .Net y Angular, bases de datos SQL y No SQL, BI con Microsoft Power BI y también tengo conocimientos en infraestructura Windows y AS400 de IBM.</p>
+        </div>
+      </div>
+
     </div>
   </section>
-  <section id="experienciaLaboral" class="workexperience">
+  <!-- /about-me -->
+
+  <!-- Work Experience -->
+  <section id="work-experience" class="mt-4">
     <div class="container">
-      <h2>Experiencia Laboral</h2>
-      <article class="work">
-        <div class="work-details">
-          <h3 class="work-title">Platzi Video</h3>
-          <h6 class="work-item">React Native / React</h6>
-          <p class="work-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-          <p class="work-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-          <p class="work-description">Platzi Video fue el resultado de 3 meses de trabajo
-            para crear la mejor app para enseñar el funcionamiento
-            de React y React Native. Desde crear un vista-detalle,
-            hasta patrones avanzados de navegaci&oacute;n, este proyecto
-            ha sido el mejor ejemplo de futuros creadores de
-            aplicaciones multiplataforma.
-          </p>
+      <div class="row">
+        <div class="col text-center text-uppercase">
+          <small>Conoce mi experiencia</small>
+          <h2>laboral</h2>
         </div>
-        <figure class="work-imageContainer">
-          <img class="work-image" src="images/platzi-video-react-native.png" alt="Proyecto del curso de React Native"
-            width="500" />
-        </figure>
-      </article>
+      </div>
     </div>
-  </section>
-  <section id="proyectosPersonales" class="workexperience">
-    <div class="container">
-      <h2>Proyectos Personales</h2>
-      <article class="work">
-        <div class="work-details">
-          <h3 class="work-title">Platzi Video</h3>
-          <h6 class="work-item">React Native / React</h6>
-          <p class="work-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-          <p class="work-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-          <p class="work-description">Platzi Video fue el resultado de 3 meses de trabajo
-            para crear la mejor app para enseñar el funcionamiento
-            de React y React Native. Desde crear un vista-detalle,
-            hasta patrones avanzados de navegaci&oacute;n, este proyecto
-            ha sido el mejor ejemplo de futuros creadores de
-            aplicaciones multiplataforma.
-          </p>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/InterGrupo.png" class="card-img-top" alt="InterGrupo">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">.Net</span>
+              <span class="badge bg-secondary">Angular</span>
+              <span class="badge bg-success">Azure</span>
+              <span class="badge bg-danger">Ms Sql Server</span>
+            </div>
+            <h5 class="card-title">Ingeniero de desarrollo intermedio</h5>
+            <p class="card-text">Marzo 2021 - Actualmente</p>
+            <ul class="card-text">
+              <li>Desarrollador BI</li>
+              <li>Desarrollador Web (.Net 5 y Angular 11)</li>
+            </ul>
+          </div>
         </div>
-        <figure class="work-imageContainer">
-          <img class="work-image" src="images/platzi-video-react-native.png" alt="Proyecto del curso de React Native"
-            width="500" />
-        </figure>
-      </article>
-    </div>
-  </section>
-  <div id="conocimiento-titulo" class="container">
-    <h2 class="knowledge-list-title">Lo que he estudiado</h2>
-  </div>
-  <section id="conocimiento" class="knowledge-list">
-    <div class="container">
-      <article class="knowledge-item">
-        <figure class="knowledge-imageContainer">
-          <img class="knowledge-image" src="images/platzi-conf.jpg" alt="PLatziConf" width="500" />
-        </figure>
-        <div class="knowledge-detail">
-          <h3 class="knowledge-title">PlatziConf M&eacute;xico 2018</h3>
-          <p class="knowledge-description">El evento m&aacutes grande sobre gente que quiere aprender m&aacute;s de
-            internet.
-            En est&eacute; evento te comparto como tener una vida de constante aprendizaje.</p>
-          <a class="knowledge-url" href="https://www.youtube.com/watch?v=iUrFW4JTv3c" target="_blank">Ver Pl&aacute;tica</a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/GrupoExito.png" class="card-img-top" alt="InterGrupo">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">AS400</span>
+              <span class="badge bg-secondary">Windows Server</span>
+              <span class="badge bg-success">Ms Sql Server</span>
+              <span class="badge bg-danger">Office365</span>
+              <span class="badge bg-warning text-dark">Power Bi</span>
+              <span class="badge bg-info text-dark">.Net</span>
+            </div>
+            <h5 class="card-title mb-0">Analista de soporte a usuarios <br> (Éxito Industrias S.A.S - Didetexco - Filial Grupo Éxito)</h5>
+            <p class="card-text">Diciembre 2018 - Febrero 2021</p>
+            <ul class="card-text">
+                <li>Administración de la operación de servidores AS400 y Windows Server.</li>
+                <li>Operación con bases de datos MS SQL SERVER</li>
+                <li>Desarrollo de ETL en MS SQL SERVER</li>
+                <li>Desarrollo de modelos de datos, reportes y dashboard en Power BI, donde se combinarón varias fuentes de datos como motores DB2, SQL SERVER, Excel, Web.</li>
+                <li>Soporte y administración de la plataforma web de la empresa.</li>
+                <li>Soporte avanzado con las aplicaciones de Microsoft Office365.</li>
+                <li>Desarrollo en .NET de interfaces entre el sistema ERP en AS400 de Didetexco y otras plataformas del Grupo Éxito.</li>
+                <li>Liderar la ejecución de controles de la ley SOX en el área.</li>
+            </ul>
+          </div>
         </div>
-      </article>
-      <article class="knowledge-item">
-        <figure class="knowledge-imageContainer">
-          <img class="knowledge-image" src="images/platzi-conf.jpg" alt="PLatziConf" width="500" />
-        </figure>
-        <div class="knowledge-detail">
-          <h3 class="knowledge-title">PlatziConf M&eacute;xico 2018</h3>
-          <p class="knowledge-description">El evento m&aacutes grande sobre gente que quiere aprender m&aacute;s de
-            internet.
-            En est&eacute; evento te comparto como tener una vida de constante aprendizaje.</p>
-          <a class="knowledge-url" href="https://www.youtube.com/watch?v=iUrFW4JTv3c" target="_blank">Ver Pl&aacute;tica</a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/GrupoExito.png" class="card-img-top" alt="GrupoExito">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Office</span>
+              <span class="badge bg-secondary">Windows</span>
+              <span class="badge bg-success">AS400</span>
+            </div>
+            <h5 class="card-title mb-0">Auxiliar administrativo de informática <br> (Éxito Industrias S.A.S - Didetexco - Filial Grupo Éxito)</h5>
+            <p class="card-text">Diciembre 2014 - Diciembre 2018</p>
+            <ul class="card-text">
+              <li>Soporte a usuarios con herramientas ofimáticas y equipos con Sistemas operativos Windows XP, 7, 8.1 Y 10.</li>
+              <li>Soporte a operaciones, backup y restauraciones de Sistemas AS400.</li>
+              <li>Soporte a servidores Windows Server 2003, 2008 y 2012.</li>
+              <li>Soporte a restauración y backup de Bases de datos MS SQL SERVER.</li>
+            </ul>
+          </div>
         </div>
-      </article>
-      <article class="knowledge-item">
-        <figure class="knowledge-imageContainer">
-          <img class="knowledge-image" src="images/platzi-conf.jpg" alt="PLatziConf" width="500" />
-        </figure>
-        <div class="knowledge-detail">
-          <h3 class="knowledge-title">PlatziConf M&eacute;xico 2018</h3>
-          <p class="knowledge-description">El evento m&aacutes grande sobre gente que quiere aprender m&aacute;s de
-            internet.
-            En est&eacute; evento te comparto como tener una vida de constante aprendizaje.</p>
-          <a class="knowledge-url" href="https://www.youtube.com/watch?v=iUrFW4JTv3c" target="_blank">Ver Pl&aacute;tica</a>
-        </div>
-      </article>
-      <article class="knowledge-item">
-        <figure class="knowledge-imageContainer">
-          <img class="knowledge-image" src="images/platzi-conf.jpg" alt="PLatziConf" width="500" />
-        </figure>
-        <div class="knowledge-detail">
-          <h3 class="knowledge-title">PlatziConf M&eacute;xico 2018</h3>
-          <p class="knowledge-description">El evento m&aacutes grande sobre gente que quiere aprender m&aacute;s de
-            internet.
-            En est&eacute; evento te comparto como tener una vida de constante aprendizaje.</p>
-          <a class="knowledge-url" href="https://www.youtube.com/watch?v=iUrFW4JTv3c" target="_blank">Ver Pl&aacute;tica</a>
-        </div>
-      </article>
-    </div>
-  </section>
-  <section id="contacto" class="contact">
-    <div class="container">
-      <form action="/suscripcion/" class="form-email">
-        <h3>¿Creamos algo juntos?</h3>
-        <input type="text" placeholder="D&eacute;jame tu email" id="email" />
-        <button>Enviar</button>
-      </form>
-      <div class="social">
-        <a href="https://twitter.com/Dac_Cardona" target="_blank" class="social-link twitter"></a>
-        <a href="https://www.facebook.com/davidcardona127878" target="_blank" class="social-link facebook"></a>
-        <a href="https://github.com/dcardonac31" target="_blank" class="social-link github"></a>
-        <a href="https://www.linkedin.com/in/david-sneider-cardona-cardenas-91798491/" target="_blank" class="social-link linkedin"></a>
-        <a href="mailto:david_ec10@hotmail.com?Subject=Contacto" target="_blank" class="social-link email"></a>
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <!-- /Work Experience -->
+
+
+  <!-- Personal Proyects -->
+  <section id="personal-proyects" class="mt-4">
     <div class="container">
-      <div>
-        <p>
-          Curso de Desarrollo web Online 2018 <img src="images/platzi.png" />
-        </p>
+      <div class="row">
+        <div class="col text-center text-uppercase">
+          <small>Conoce mis</small>
+          <h2>Proyectos Personales</h2>
+        </div>
       </div>
-      <div>
-        <p>Designed width &#128154 by <a href="https://twitter.com/thespianartist" target="_blank">@thespianartist<a/>  </p>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/proyectoLtc.jpg" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Litecoin</span>
+              <span class="badge bg-secondary">Python</span>
+              <span class="badge bg-success">Telegram</span>
+              <span class="badge bg-danger">Postgresql</span>
+            </div>
+            <h5 class="card-title">Bot de generación de Litecoin</h5>
+            <p class="card-text">Explotación de bot de Telegram para obtención de criptomoneda Litecoin, por medio de Python y un API de telegram, se logra interacturar con el bot de manera automatica, con este proyecto se han obtenido mas $USD 50. <br> En una base de datos personal de Postgresql se guarda toda la información que genera la ejecución del script para llevar trazabilidad</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Personal proyects -->
+
+  <!-- Studies -->
+  <section id="studies" class="mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center text-uppercase">
+          <small>Conoce mis</small>
+          <h2>Estudios Formales</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.iush.edu.co/assets/svg/Logo-IUSH.svg" class="card-img-top" alt="IUSH">
+          <div class="card-body">
+            <h5 class="card-title">Ingeniería de sistemas (7 semestre en curso)</h5>
+            <p class="card-text">Institución Universitaria Salazar y Herrera -IUSH - (2017 - en curso)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Logo-ITM-01.png" class="card-img-top" alt="ITM">
+          <div class="card-body">
+            <h5 class="card-title">Tecnología en Sistemas de Información (No culminado)</h5>
+            <p class="card-text">Instituto Tecnológico Metropolitano - ITM - (2011 - 2017)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.ienormalmedellin.edu.co/img/I.E.EscuelaNormalSMed.png" class="card-img-top" alt="EscuelaNormalSMed">
+          <div class="card-body">
+            <h5 class="card-title">Bachiller Académico con profundización en Educación y formación pedagógica</h5>
+            <p class="card-text">Institución Educativa Escuela Normal Superior de Medellín - 2008</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center text-uppercase">
+          <small>Conoce mis</small>
+          <h2>Diplomados y cursos</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/Udemy.svg" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Azure</span>
+              <span class="badge bg-secondary">MS Sql Server</span>
+            </div>
+            <h5 class="card-title">Azure Data Engineering Fundamentals: SQL y Data Warehousing</h5>
+            <p class="card-text">Udemy - Marzo 2021</p>
+            <a href="https://www.udemy.com/certificate/UC-112ef201-122c-418f-8562-0298d7a1aa75" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/Udemy.svg" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Azure</span>
+            </div>
+            <h5 class="card-title">Cloud Computing: Azure Fundamentals</h5>
+            <p class="card-text">Udemy - Marzo 2021</p>
+            <a href="https://www.udemy.com/certificate/UC-a34c9635-d3bb-4590-bef5-1d365f413885" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/Udemy.svg" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">HTML</span>
+              <span class="badge bg-secondary">CSS</span>
+              <span class="badge bg-success">Javascript</span>
+              <span class="badge bg-danger">NodeJs</span>
+              <span class="badge bg-warning text-dark">MongoDB</span>
+            </div>
+            <h5 class="card-title">Aprende Javascript ES9, HTML, CSS3 y NodeJS desde Cero</h5>
+            <p class="card-text">Udemy - Diciembre 2020</p>
+            <a href="https://www.udemy.com/certificate/UC-ac9a3de7-9e05-4223-84ee-909b22e66cd8" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/Platzi.jpg" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Python</span>
+            </div>
+            <h5 class="card-title">Curso Básico de Python</h5>
+            <p class="card-text">Platzi - Diciembre 2020</p>
+            <a href="https://platzi.com/p/DavidCardonaCardenas/curso/1937-python/diploma/detalle/" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/Platzi.jpg" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Git</span>
+            </div>
+            <h5 class="card-title">Curso Profesional de Git y GitHub</h5>
+            <p class="card-text">Platzi - Noviembre 2020</p>
+            <a href="https://platzi.com/@DavidCardonaCardenas/curso/1557-git-github/diploma/detalle/" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/Platzi.jpg" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Logica</span>
+            </div>
+            <h5 class="card-title">Curso de Pensamiento Lógico</h5>
+            <p class="card-text">Platzi - Enero 2020</p>
+            <a href="https://platzi.com/p/DavidCardonaCardenas/curso/1444-course/diploma/detalle/" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/Udemy.svg" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">C#</span>
+            </div>
+            <h5 class="card-title">Curso Completo de Programación C Sharp (C#)</h5>
+            <p class="card-text">Udemy - Septiembre 2019</p>
+            <a href="https://ude.my/UC-HR9P8X1B" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/cedesistemas.png" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">.Net</span>
+            </div>
+            <h5 class="card-title">Diplomado Winforms - ASP.NET - WEB SERVICES - AJAX - FUNDAMENTOS DE ASP MVC</h5>
+            <p class="card-text">Cedesistemas - Diciembre 2016</p>
+            <a href="https://1drv.ms/b/s!AtmPcPgL6R0TieJ36TB8sPaIgirI_w?e=gBCwPa" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/cedesistemas.png" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">.Net</span>
+            </div>
+            <h5 class="card-title">Diplomado en tecnologias .NET Nivel I</h5>
+            <p class="card-text">Cedesistemas - Diciembre 2016</p>
+            <a href="https://1drv.ms/b/s!AtmPcPgL6R0TieJ2k70D06j-bqFVLg?e=CfWRpw" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/logoSena.png" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Excel</span>
+            </div>
+            <h5 class="card-title">Elaborar cálculos y tablas financieras con Microsoft Excel</h5>
+            <p class="card-text">Sena - Junio 2020</p>
+            <a href="http://certificados.sena.edu.co/guardar.asp?var1=9201001144390CC1037611876C" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/logoSena.png" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Telecomunicaciones</span>
+            </div>
+            <h5 class="card-title">Redes y seguridad</h5>
+            <p class="card-text">Sena - Mayo 2014</p>
+            <a href="http://certificados.sena.edu.co/guardar.asp?var1=912000713291CC1037611876C" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/logoSena.png" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Inventarios</span>
+            </div>
+            <h5 class="card-title">Administración y control de inventarios</h5>
+            <p class="card-text">Sena - Julio 2011</p>
+            <a href="https://1drv.ms/b/s!AtmPcPgL6R0TgZdmHmTCjkUY0e8FAw?e=ryHXM6" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/logoSena.png" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Java</span>
+            </div>
+            <h5 class="card-title">Variables y estructuras de control en la programación orientada a objetos: Java</h5>
+            <p class="card-text">Sena - Abril 2011</p>
+            <a href="https://1drv.ms/b/s!AtmPcPgL6R0TgZdlFbaZ4KrPjhsEsg?e=70WDJC" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/logoSena.png" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Informatíca</span>
+            </div>
+            <h5 class="card-title">Arquitectura de computadores</h5>
+            <p class="card-text">Sena - Junio 2020</p>
+            <a href="https://1drv.ms/b/s!AtmPcPgL6R0TgZdhUMK8JU6BjaALqw?e=qh1phe" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/comfenalco.png" class="card-img-top" alt="ProyectoLtc">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge bg-primary">Informatíca</span>
+            </div>
+            <h5 class="card-title">Curso de arquitectura, ensamble y configuración de computadores</h5>
+            <p class="card-text">Comfenalco Antioquia - Diciembre 2008</p>
+            <a href="https://1drv.ms/b/s!AtmPcPgL6R0TgZdjNWAKcB_H6MjAYg?e=uwS54V" target="_blank" class="btn btn-primary">Certificado</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Studies -->
+
+  
+
+
+  
+  <!-- footer -->
+  <footer id="footer" class="pb-4 pt-4">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 col-lg">
+          <img src="images/github.svg" alt="Github">
+          <a href="https://github.com/dcardonac31" target="_blank">Github</a>
+        </div>
+        <div class="col-12 col-lg">
+          <img src="images/twitter.svg" alt="Github">
+          <a href="https://twitter.com/Dac_Cardona" target="_blank">Twitter</a>
+        </div>
+        <div class="col-12 col-lg">
+          <img src="images/twitter.svg" alt="LinkedIn">
+          <a href="https://www.linkedin.com/in/dcardonac31/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="col-12 col-lg">
+          <img src="images/whatsapp.svg" alt="LinkedIn">
+          <a href="https://api.whatsapp.com/send?phone=+573054352229" target="_blank">Whatsapp</a>
+        </div>
       </div>
     </div>
   </footer>
+  <!-- /footer -->
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
 </body>
+
 </html>
